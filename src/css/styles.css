@@ -287,3 +287,24 @@ li a:hover {
 .menu li:nth-child(5):hover ~ .bg {
   background: #822d7d;
 }
+
+/* Achtergrond blijven staan */
+.menu li:first-child:focus ~ .bg {
+  background: #d8157d;
+}
+
+.menu li:nth-child(2):focus ~ .bg {
+  background: #d8242a;
+}
+
+.menu li:nth-child(3):focus ~ .bg {
+  background: #009948;
+}
+
+.menu li:nth-child(4):focus ~ .bg {
+  background: #08a3db;
+}
+
+.menu li:nth-child(5):focus ~ .bg {
+  background: #822d7d;
+}

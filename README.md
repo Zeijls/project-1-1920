@@ -1,50 +1,30 @@
-# Rembrandt van Rijn in het Rijksmuseum
+# Help! Ik moet een werkstuk maken
 
-## Web App From Scratch @cmda-minor-web 1819
+## Project @cmda-minor-web 1819
 
-![Overzichtspagina](img/overview.png)
+![Overzichtspagina](src/img/overzicht.png)
 ![Detailpagina](img/detail.png)
 
 ## Inhoudspagina
 
 - [Live Demo](#Live-Demo)
-- [To Do](#To-Do)
 - [Beschrijving](#Beschrijving)
-- [Leerdoelen](#Leerdoelen)
 - [Gebruik](#Gebruiks)
 - [API](#API)
-- [Actor Diagram](#Actor-Diagram)
-- [Interactive Diagram](#Interactive-Diagram)
-- [Wish List](#Wish-List)
+- [Punten voor in de toekomst](#Punten-voor-in-de-toekomst)
 - [Bronnen](#Bronnen)
 
 ## Live Demo
 
-[Live Demo](https://zeijls.github.io/web-app-from-scratch-1920/)
+[Live Demo](https://zeijls.github.io/project-1-1920/.)
 
 ## Opdracht
 
-- Data moet vanuit een API worden gerenderd in de HTML
-- De data uit de API wordt asynchroon opgehaald
-- Voor het oog is er een overzichts en detailpagina met gebruik van een router (single page web app)
-- De code is opgedeeld in modules
-- De code visueel maken dmv een Actor Diagram en Interactive Diagram
-- De applicatie bevat states
-- De code is dynamisch
+In deze projectweek kregen wij 3 cases waar we uit konden kiezen. Ik heb voor de 2e case gekozen waarbij je een functie ontwikkelen die NT2 kinderen helpt met het vinden van de goede boeken voor een werkstuk dat zij moeten maken. In eerst instantie had ik deze gekozen omdat ik nog graag extra aan de slag wilde met map reduce en filter, en deze case mij daar het meest geschrikt voor leek.
 
 ## Concept
 
-Op de webapplicatie zijn alle schilderijen van Rembrandt van Rijn in het Rijksmuseum weergegeven. Zodra een schilderij wordt geselecteerd worden de details weergegeven. Als het ophalen van de schilderijen lang duurt is er een loadingstate.
-
-## De structuur
-
-# Actor Diagram
-
-![Actor Diagram](./img/actordiagram.jpg)
-
-# Interactive Diagram
-
-![Interactive Diagram](./img/interactiveDiagram.png)
+In mijn concept kun je een goed onderwerp voor je werkstuk vinden. Ik heb alles zo duidelijk mogelijk proberen te onderscheiden, zoals bijvoorbeeld met kleuren. Het kind kan filteren op verschillende niveaus. Zodra het kind op een boek klikt kan hij of zij lezen waar het over gaat en worden er verschillenden details weergegeven. Als het kind het een interessant boek lijkt voor haar werkstuk kan ze hem toevoegen aan haar leeslijst. Zodra ze in de bibliotheek is pakt ze haar leeslijst erbij en kan ze in een keer alle boeken verzamelen.
 
 ## Gebruik
 
@@ -57,76 +37,47 @@ cd Pth/To/Folder
 Clone de repository
 
 ```
-    git clone https://github.com/Zeijls/web-app-from-scratch-1920.git
-    cd web-app-from-scratch-1920
+    git clone https://zeijls.github.io/project-1-1920/.git
+    cd project-1-1920
 ```
 
-Na het clonen, open het `index.html` bestnd in je localhost.
+Na het clonen, open het `index.html` bestand in je localhost.
 
 ## API
 
-In deze applicatie gebruik ik de API van het Rijksmuseum. In deze API is een groot deel van de collectie van het Rijksmuseum verzameld. Alle details van de schilerderijen worden hierin weergegeven. Vanwege copyright restricties zijn kunstwerken van de 20e en 21e eeuw niet toegevoegd in deze API.
+De API die ik hier heb gebruikt is van de OBA. Hierin staan al hun verschillende boeken. Om de API te gebruiken heb je een key nodig.
 
-Om gebruik te maken van de API van het Rijksmuseum heb je een key nodig. Deze kun je aanvragen bij de gevanceerde account instellingen op de site van het Rijksumseum. https://www.rijksmuseum.nl/en/rijksstudio/
+- [OBA API](https://zoeken.oba.nl/api/v1/?i_public=9a9b148ab8abe117aa908&i_secret=1a3b58ea286b7117a29af#/details)
 
-Ik heb alleen de schilderijen van Rembrandt van Rijn gebruikt door de volgende endpoints te gebruiken.
+#### Data ophalen uit de API
 
-> const rijksAPI = baseURl + key + involvedMaker + maker;
+Om de boeken van te voren te filteren gebruikt de API verschilende endpoinst. Hiervoor heb ik de volgende url gebruikt;
+![Voorbeeld API](src/img/voorbeeldAPI.png)
 
-Er bleven 9 schilderijen over. Vanaf dit punt heb ik deze schilderijen verder uitgezocht door middel van Map, Filter en Reduce.
+Ik heb de keys niet weergegeven omdat het niet de bedoeling is dat dit openbaar wordt.
 
-## To Do
+Vervolgens moet je je fetch de volgende parameteres meegeven: confic, url
+`fetch(url, config)`
 
-Week 1
+Als dit is gedaan wordt de volgende data weergegeven:
+![Uitkomst API](src/img/uitkomstDataAPI.png)
 
-- [x] 2. Readme afmaken
-- [x] 3. Loading data asynchronously from an API
-- [x] MAP
-- [x] FILTER
-- [x] REDUCE
-- [x] Issues verwerken
+## Punten voor in de toekomst
 
-Week 2
-
-- [x] Actor diagram.
-- [x] Interactive diagram
-- [x] Refactor code
-- [x] Key aanpassen in url (Issue Marten)
-
-Week 3
-
-- [x] Functies opdelen in modules
-- [x] States toevoegen (Feedback loading)
-- [x] 3. Reflect on work (Tuesday)
-
-- [x] Nadelen client side renderen van HTML kunnen benoemen (Zoeken in aantekeningen)
-- [x] Criteria nog goed doorlezen
-- [x] Beoordeling voorbereiden
-- [x] Best practices doorlezen
-
-## Wish List
-
-- [ ] Schilderijen van Rembrandt van Rijn ook in een filter zetten
-- [ ] Betere flow
+- [ ] Detail pagina
+- [ ] Zoeken op onderwerpen
+- [ ] 3D Caroussel om de onderwerpen weer te geven
+- [ ] Werkende wishlist
+- [ ] Bekijken of de boeken in de wishlist nog beschrikbaar zijn in de bilbiotheek
+- [ ] Spraak output functie zodra het kind het woord niet kent
+- [ ] De achtergrond kleur laten staan bij de categorie
 
 ## Bronnen
 
-- [Promise Then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
-- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- [Routen](http://projects.jga.me/routie/)
-- [Update UI from route](https://github.com/cmda-minor-web/web-app-from-scratch-1920/tree/master/examples)
-- [Insert Adjacent HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
-- [Inner HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
-- [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-- [Filter](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-- [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+- [De repository Project 1](https://github.com/cmda-minor-web/project-1-1920)
+- [Change background on hover](https://codepen.io/ianfarb/pen/DegqJ)
 
 ## Credits
 
-- Marjolein Aardewijn, heeft me geholpen met het werkend krijgen van de loading state
-- Joost Faber, zijn introductie les over de routie heeft me geholpen het te begrijpen en toe te passen
-- Robin Stut, heeft mij geholpen met de promise, hij gaf een error aan de de promise niet resolved was, terwijl de console dit wel aangaf.
-- Joost Faber, hij heeft mij geholpen met het refactoren van mijn routie
-- Robin Stut, heeft mij tijdens een nude klasje uitgelegd hoe je adv. insertAdjacentHTML de data die je wilt kunt renderen
-- Bas, heeft mij geholpen met de berekening in de reduce
+- Marjolein Aardewijn, heeft me geholpen met de local storage, het verwijderen van de oude boeken en async functies.
+- Joost Faber, zijn voorbeeld in de repository

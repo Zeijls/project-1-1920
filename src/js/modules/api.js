@@ -1,16 +1,11 @@
-import { render } from "./render.js";
 import { data as dataModule } from "./data.js";
-
-/*** Fetching data -> refactor into module later ***/
 
 const cors = "https://cors-anywhere.herokuapp.com/";
 const endpoint = "https://zoeken.oba.nl/api/v1/search/?q=";
-// const query = "tolkien";
 const key = "dc0e2f073c03758140452044906bc818";
 const secret = "6b02878111c06660300798cf4c40a685";
 const detail = "Default";
 const refine = "&refine=true";
-// const facet = "&facet=";
 const clasification = "classification:informatieboek";
 
 const config = {
