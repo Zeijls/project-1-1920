@@ -1,56 +1,132 @@
-# Project 1 @cmda-minor-web · 2019-2020
+# Rembrandt van Rijn in het Rijksmuseum
 
-## Zoek in de de collectie van de OBA
+## Web App From Scratch @cmda-minor-web 1819
 
-Het project vindt plaats bij de Centrale OBA. Maandagochtend is om 10.30 uur de kickoff (10:15 uur inloop), vrijdag zijn de presentaties van de resultaten. In een week bouwt iedere student een eigen prototype dat bezoekers kan helpen om items uit de OBA collectie te vinden. Technieken geleerd bij [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) worden toegepast bij het bouwen van de de prototypes.
+![Overzichtspagina](img/overview.png)
+![Detailpagina](img/detail.png)
 
-## Instructie voor het gebruiken van de API
+## Inhoudspagina
 
- [http://zoeken.oba.nl/api/v1](http://zoeken.oba.nl/api/v1)
- 
- Zie voorbeeld code in deze repository voor het aanspreken van de API.
+- [Live Demo](#Live-Demo)
+- [To Do](#To-Do)
+- [Beschrijving](#Beschrijving)
+- [Leerdoelen](#Leerdoelen)
+- [Gebruik](#Gebruiks)
+- [API](#API)
+- [Actor Diagram](#Actor-Diagram)
+- [Interactive Diagram](#Interactive-Diagram)
+- [Wish List](#Wish-List)
+- [Bronnen](#Bronnen)
 
-## Programma
-We verzamelen maandagochtend om 10.15 op de 1e verdieping van de Centrale OBA, [Oosterdokskade 143](https://www.google.com/maps/place/OBA+library+of+Amsterdam/@52.3756983,4.9082087,15z/data=!4m2!3m1!1s0x0:0x6b97f693e6ecb494?ved=2ahUKEwioo6OrzubgAhWLNOwKHR6KDQgQ_BIwCnoECAYQCA).
+## Live Demo
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan (technisch) bewijzen van een concept-idee. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) begrijpt en beheerst.
+[Live Demo](https://zeijls.github.io/web-app-from-scratch-1920/)
 
-Op maandag, woensdag en vrijdag zijn er coaches aanwezig voor coaching en feedback. Maandag is de kickoff, woiensdagochtend zijn er standups om de status door te spreken en vrijdag is de beoordeling. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+## Opdracht
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten kijken naar je code en beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. Lifely is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+- Data moet vanuit een API worden gerenderd in de HTML
+- De data uit de API wordt asynchroon opgehaald
+- Voor het oog is er een overzichts en detailpagina met gebruik van een router (single page web app)
+- De code is opgedeeld in modules
+- De code visueel maken dmv een Actor Diagram en Interactive Diagram
+- De applicatie bevat states
+- De code is dynamisch
 
-Het project telt als AVV mee met de Meesterproef.
+## Concept
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+Op de webapplicatie zijn alle schilderijen van Rembrandt van Rijn in het Rijksmuseum weergegeven. Zodra een schilderij wordt geselecteerd worden de details weergegeven. Als het ophalen van de schilderijen lang duurt is er een loadingstate.
 
-### Feedback over Web App from Scratch
-In het vak [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) heb je geleerd een web app te maken zonder frameworks of onnodige libraries, dus zoveel mogelijk met native HTML, CSS & JavaScript. Het eindproduct is een modulair opgezet prototype voor een single page web app. Data wordt opgehaald uit een externe API, waar nodig gemanipuleerd en vervolgens getoond in de Web App. Je leert hoe structuur aan te brengen in je code en hoe je hiermee 'from scratch' een web app kan maken.
+## De structuur
 
-### Feedback over CSS to the Rescue
-In het vak [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) heb je geleerd over de (brede) scope van CSS, over Progressive Enhancement, de _cascase_, _inheritance_ en _specifity_. Het is belangrijk om deze basisprincipes van CSS goed te begrijpen. Niet alleen op praktisch niveau, ook op experimenteel niveau. Zonder goed begrip van de basisprincipes is CSS magisch en weird. Met een goed begrip heb je CSS onder controle en kan je het laten doen wat jij wil. En dat is nodig om webpagina’s vorm te geven met attention to detail; webpagina’s waar mensen blij van worden.
+# Actor Diagram
 
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de OBA. 
-- Github met je code en readme.
+![Actor Diagram](./img/actordiagram.jpg)
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+# Interactive Diagram
 
-<!-- ☝️ replace this description with a description of your own work -->
+![Interactive Diagram](./img/interactiveDiagram.png)
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+## Gebruik
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+Ga via de terminal naar de folder waar je het projet wilt plaatsen:
 
-<!-- Maybe a table of contents here? 📚 -->
+```
+cd Pth/To/Folder
+```
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+Clone de repository
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+```
+    git clone https://github.com/Zeijls/web-app-from-scratch-1920.git
+    cd web-app-from-scratch-1920
+```
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+Na het clonen, open het `index.html` bestnd in je localhost.
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## API
+
+In deze applicatie gebruik ik de API van het Rijksmuseum. In deze API is een groot deel van de collectie van het Rijksmuseum verzameld. Alle details van de schilerderijen worden hierin weergegeven. Vanwege copyright restricties zijn kunstwerken van de 20e en 21e eeuw niet toegevoegd in deze API.
+
+Om gebruik te maken van de API van het Rijksmuseum heb je een key nodig. Deze kun je aanvragen bij de gevanceerde account instellingen op de site van het Rijksumseum. https://www.rijksmuseum.nl/en/rijksstudio/
+
+Ik heb alleen de schilderijen van Rembrandt van Rijn gebruikt door de volgende endpoints te gebruiken.
+
+> const rijksAPI = baseURl + key + involvedMaker + maker;
+
+Er bleven 9 schilderijen over. Vanaf dit punt heb ik deze schilderijen verder uitgezocht door middel van Map, Filter en Reduce.
+
+## To Do
+
+Week 1
+
+- [x] 2. Readme afmaken
+- [x] 3. Loading data asynchronously from an API
+- [x] MAP
+- [x] FILTER
+- [x] REDUCE
+- [x] Issues verwerken
+
+Week 2
+
+- [x] Actor diagram.
+- [x] Interactive diagram
+- [x] Refactor code
+- [x] Key aanpassen in url (Issue Marten)
+
+Week 3
+
+- [x] Functies opdelen in modules
+- [x] States toevoegen (Feedback loading)
+- [x] 3. Reflect on work (Tuesday)
+
+- [x] Nadelen client side renderen van HTML kunnen benoemen (Zoeken in aantekeningen)
+- [x] Criteria nog goed doorlezen
+- [x] Beoordeling voorbereiden
+- [x] Best practices doorlezen
+
+## Wish List
+
+- [ ] Schilderijen van Rembrandt van Rijn ook in een filter zetten
+- [ ] Betere flow
+
+## Bronnen
+
+- [Promise Then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Routen](http://projects.jga.me/routie/)
+- [Update UI from route](https://github.com/cmda-minor-web/web-app-from-scratch-1920/tree/master/examples)
+- [Insert Adjacent HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
+- [Inner HTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+- [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+- [Filter](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+
+## Credits
+
+- Marjolein Aardewijn, heeft me geholpen met het werkend krijgen van de loading state
+- Joost Faber, zijn introductie les over de routie heeft me geholpen het te begrijpen en toe te passen
+- Robin Stut, heeft mij geholpen met de promise, hij gaf een error aan de de promise niet resolved was, terwijl de console dit wel aangaf.
+- Joost Faber, hij heeft mij geholpen met het refactoren van mijn routie
+- Robin Stut, heeft mij tijdens een nude klasje uitgelegd hoe je adv. insertAdjacentHTML de data die je wilt kunt renderen
+- Bas, heeft mij geholpen met de berekening in de reduce
