@@ -1,4 +1,4 @@
-# Help! Ik moet een werkstuk maken
+# Werkstukopedia
 
 ## Project @cmda-minor-web 1819
 
