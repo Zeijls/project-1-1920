@@ -20,21 +20,6 @@ const config = {
 export const api = {
   getData: async function(query) {
     const url = `${cors}${endpoint}${clasification}%20${query}&authorization=${key}&detaillevel=${detail}${refine}&output=json`;
-    //     fetch(url, config)
-    //       .then(response => {
-    //         return response.json();
-    //       })
-    //       .then(data => {
-    //         // render(data)
-    //         dataModule.setItem(query, data.results);
-    //         return data.results;
-    //         console.log(data);
-    //       });
-    //     // .catch(err => {
-    //     //   console.log(err);
-    //     // });
-    //   }
-    // };
 
     try {
       const response = await fetch(url, config);

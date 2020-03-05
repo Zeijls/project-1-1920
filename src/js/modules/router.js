@@ -1,5 +1,5 @@
 import { api } from "./api.js";
-import { data as dataModule } from "./data.js";
+// import { data as dataModule } from "./data.js";
 import { render } from "./render.js";
 
 // Router

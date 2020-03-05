@@ -1,40 +1,16 @@
-// render data
-// function render(data) {
-//   const results = data.results;
-//   console.dir(results);
-//   results.forEach((item, i) => {
-//     const html = `
-//               <article>
-//               <img class="img" src="${
-//                 item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-//               }">
-//                 <h2 class="title">${item.titles[0]}</h2>
-//                 <a href=""><img src="src/img/star.png"></a>
-//               </article>
-
-//             `;
-//     main.insertAdjacentHTML("beforeend", html);
-//   });
-// }
-
-// Samenvatting tekst
-
-/* <p>${
-    item.summaries ? item.summaries[0] : "Geen samenvatting"
-  }</p>  */
-
-const main = document.querySelector("main");
-// const result = document.querySelector(".results");
+// const main = document.querySelector("main");
 const book = document.querySelector(".books"),
   title = document.querySelector(".title");
 
 export const render = {
   title: function(query) {
+    const titel = document.getElementById("title");
     const html = `
         <h1>Boeken over ${query}</h1>
     `;
 
-    title.insertAdjacentHTML("beforeend", html);
+    title.insertAdjacentHTML("afterbegin", html);
+    console.log(title);
   },
 
   // render data
@@ -49,27 +25,21 @@ export const render = {
     const results = data;
     const boekies = document.getElementById("books");
 
-    // Remove alle bestaande boekjes
-    // this.remove(book, title);
-    // data = "";
-    // console.log("data", results);
-    // while boekjes.firstChild => remove gvd
-
-    // Voeg daarna nieuwe boeken toe (zie onderstaand)
-
     results.forEach((item, i) => {
       const html = `
             <article>
-              <h2>${item.titles[0]}</h2>
-              <p>${item.summaries ? item.summaries[0] : "Geen samenvatting"}</p>
-              <img src="${
-                item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-              }">
+            <img src="${
+              item.coverimages ? item.coverimages[1] : "Geen samenvatting"
+            }">
+            <button><img src="src/img/star.png"></button>
             </article>
           `;
       boekies.insertAdjacentHTML("beforeend", html);
     });
   },
+
+  // <h2>${item.titles[0]}</h2>
+  // <p>${item.summaries ? item.summaries[0] : "Geen samenvatting"}</p>
 
   overview: function(elementIdHeader, elementIdBooks, query, data) {
     console.log(data.length);
@@ -112,12 +82,4 @@ export const render = {
       div.removeChild(div.firstElementChild);
     }
   }
-
-  //   books.addEventListener("click", function() {
-  //     const clean = document.getElementById("results");
-  //     while (clean.firstChild) {
-  //       clean.removeChild(clean.lastChild);
-  //     }
-  //   });
-  // }
 };
