@@ -14,16 +14,17 @@
     <a href=""> <img src="src/img/star.png"></img></a>
 
 </header>
+
 <body>
-        <!-- <h1>OBA Api</h1> -->
+    <!-- <h1>OBA Api</h1> -->
 
-        <div class="wrapper">
-            <div class="container">
+    <div class="wrapper">
+        <div class="container">
 
 
-                <form class="form">
-                    <!-- <h1>Vind de beste boeken voor jouw werkstuk</h1> -->
-                    <!-- <input type="text" placeholder="Naam">
+            <form class="form">
+                <!-- <h1>Vind de beste boeken voor jouw werkstuk</h1> -->
+                <!-- <input type="text" placeholder="Naam">
                     <input type="password" placeholder="Leeftijd">
 
                     <div jongen>
@@ -35,29 +36,128 @@
                         <label for="female">Meisje</label><br>
                     </div> -->
 
-                    
-                        <h2>Welk gevoel wil je krijgen bij het lezen van een boek?</h2>
-                        <div categorieen>
-                        <a href=""><img src="src/img/blij.svg" alt="Vrolijk"></a>
+
+                <h2>Welk onderwerp lijkt jou interessant?</h2>
+                <div categorieen>
+                    <!-- <a href=""><img src="src/img/blij.svg" alt="Vrolijk"></a>
                         <a href=""><img src="src/img/spannend.svg" alt="spannend"></a>
                         <a href=""><img src="src/img/leerzaam.svg" alt="Leerzaam"></a>
                         <a href=""><img src="src/img/grappig.svg" alt="grappig"></a>
-                        <a href=""><img src="src/img/liefde.svg" alt="Liefde"></a>
-                        <!-- <div categorie><div><img src="src/img/sport.png" alt="">
-                        <p>Sport</p></div></div>
-                        
-                        <div categorie><div><img src="src/img/pet.png" alt="">
-                        <p>Dieren</p></div></div> -->
-                    </div>
+                        <a href=""><img src="src/img/liefde.svg" alt="Liefde"></a> -->
+                    <a categorie href="#sport" data-route="sport">
+                        <div><img src="src/img/sport.png" alt="">
+                            <p>Sport</p>
+                        </div>
+                    </a>
 
-                    <button type="submit" id="login-button">Vind een boek</button>
-                </form>
-            </div>
+                    <a categorie href="#dieren" data-route="dieren">
+                        <div><img src="src/img/pet.png" alt="">
+                            <p>Dieren</p>
+                        </div>
+                    </a>
+
+                    <a categorie href="#geschiedenis" data-route="geschiedenis">
+                        <div><img src="src/img/history.png" alt="">
+                            <p>Geschiedenis</p>
+                        </div>
+                    </a>
+                    <a categorie href="#landen" data-route="landen">
+                        <div><img src="src/img/world.png" alt="">
+                            <p>Landen</p>
+                        </div>
+                    </a>
+                    <a categorie href="#muziek" data-route="muziek">
+                        <div><img src="src/img/music.png" alt="">
+                            <p>Muziek</p>
+                        </div>
+                    </a>
+                    <a categorie href="#kunst" data-route="kunst">
+                        <div><img src="src/img/art.png" alt="">
+                            <p>Kunst</p>
+                        </div>
+                    </a>
+                    <!-- <div id="slideshow">
+                        <div class="slide-wrapper">
+                            <div class="slide">
+                                <a categorie href="#sport" data-route="sport">
+                                    <div><img src="src/img/sport.png" alt="">
+                                        <h1 class="slide-number">Sport</h1>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="slide">
+                            <a categorie href="#geschiedenis" data-route="geschiedenis">
+                                <div><img src="src/img/history.png" alt="">
+                                    <h1 class="slide-number">Geschiedenis</h1>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a categorie href="#dieren" data-route="dieren">
+                                <div><img src="src/img/pet.png" alt="">
+                                    <h1 class="slide-number">Dieren</h1>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a categorie href="#landen" data-route="landen">
+                                <div><img src="src/img/world.png" alt="">
+                                    <h1 class="slide-number">Landen</h1>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a categorie href="#muziek" data-route="muziek">
+                                <div><img src="src/img/music.png" alt="">
+                                    <h1 class="slide-number">Muziek</h1>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="slide">
+                            <a categorie href="#Kunst" data-route="kunst">
+                                <div><img src="src/img/art.png" alt="">
+                                    <h1 class="slide-number">Kunst</h1>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div> -->
+
+                </div>
+        </div>
+    </div>
+
+    <!-- <button type="submit" id="login-button">Vind een boek</button> -->
+    </form>
+
+
+
+
     <main>
         <!-- <button class="wishlist">Favoriet</button>     -->
+        <section id="results" class="results">
+            <a href=""><i class="far fa-arrow-alt-circle-left"></i>Terug</a>
+
+            <div id="title" class="title">
+
+            </div>
+
+            <div id="books" class="books">
+
+            </div>
+        </section>
     </main>
 
-    <script src="src/js/script.js"></script>
+    <script src="src/js/lib/routie.min.js"></script>
+    <script src="src/js/script.js" type="module"></script>
+
 </body>
 
 </html>
