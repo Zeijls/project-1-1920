@@ -3,7 +3,7 @@ body {
   background-color: #f2f2f2;
 }
 
-#title > h1 {
+#title>h1 {
   color: black;
   z-index: 100;
   opacity: 1;
@@ -24,16 +24,16 @@ header {
   width: 100%;
 }
 
-header > a:first-child {
+header>a:first-child {
   margin-left: 10%;
 }
 
-header > a:first-child > img {
+header>a:first-child>img {
   width: 8em;
   text-align: right;
 }
 
-header > a:last-child {
+header>a:last-child {
   text-align: left;
   margin-left: auto;
   margin-right: 10%;
@@ -43,7 +43,7 @@ header > a:last-child {
   border-radius: 10px;
 }
 
-header > a:last-child > img {
+header>a:last-child>img {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -55,20 +55,22 @@ header > a:last-child > img {
   margin-top: 5%;
 }
 
-main > a {
+main>a {
   background-color: #05a4db;
   padding: 1em;
   text-decoration: none;
   font-size: 1em;
   border-radius: 10px;
   color: white;
+  /* margin-top: 20%; */
   /* margin-bottom: 10%; */
 }
+
 /* Boeken */
 
 main {
   width: 80%;
-  margin: auto;
+  margin: 6% auto;
   /* background-color: white; */
 }
 
@@ -107,7 +109,7 @@ article:hover {
   transform: scale(1.1);
 }
 
-article > img {
+article>img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -116,7 +118,7 @@ article > img {
   margin-bottom: 0;
 }
 
-article > button {
+article>button {
   background-color: #08a3db;
   position: absolute;
   right: 0;
@@ -127,7 +129,7 @@ article > button {
   border-radius: 10px;
 }
 
-article > button > img {
+article>button>img {
   width: 40px;
   height: 40px;
 }
@@ -167,7 +169,7 @@ article:hover .img {
   transition: opacity 0.1s 0s linear;
 }
 
-article > a {
+article>a {
   width: 18%;
   height: 18%;
   color: white;
@@ -183,7 +185,7 @@ article > a {
   background-color: #05a4db;
 }
 
-article > a > img {
+article>a>img {
   width: 30px;
   height: 30px;
   text-align: center;
@@ -231,17 +233,17 @@ li a:hover {
 
 .menu {
   width: 700px;
-  margin: 60px auto 70px auto;
-  border-radius: 10px;
+  margin: 10px auto 50px auto;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
-.menu > li > a > img {
+.menu>li>a>img {
   width: 50px;
   height: 50px;
 }
 
-.menu > li > a > p {
+.menu>li>a>p {
   font-size: 0.5em;
   font-weight: 300;
 }
@@ -249,6 +251,7 @@ li a:hover {
 /* Button link */
 .menu li:first-child a {
   background: #d8157d;
+  border-radius: 10px 0 0 10px;
 }
 
 .menu li:nth-child(2) a {
@@ -265,25 +268,65 @@ li a:hover {
 
 .menu li:nth-child(5) a {
   background: #822d7d;
+  border-radius: 0 10px 10px 0;
 }
 
 /* Achtergrond hover */
-.menu li:first-child:hover ~ .bg {
+.menu li:first-child:hover~.bg {
   background: #d8157d;
 }
 
-.menu li:nth-child(2):hover ~ .bg {
+.menu li:nth-child(2):hover~.bg {
   background: #d8242a;
 }
 
-.menu li:nth-child(3):hover ~ .bg {
+.menu li:nth-child(3):hover~.bg {
   background: #009948;
 }
 
-.menu li:nth-child(4):hover ~ .bg {
+.menu li:nth-child(4):hover~.bg {
   background: #08a3db;
 }
 
-.menu li:nth-child(5):hover ~ .bg {
+.menu li:nth-child(5):hover~.bg {
   background: #822d7d;
+}
+
+/* Achtergrond */
+.menu li:nth-child(1):active+.bg {
+  background: #d8157d;
+}
+
+/* Zoekbalk */
+
+.zoekbalk {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zoekbalk>input[type="text"] {
+  padding: 1em 1em;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 5px;
+  box-shadow: none;
+
+}
+
+.zoekbalk>button {
+  background-color: #08a3db;
+  width: 5em;
+  height: 3em;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  margin-left: 0;
+  margin-right: auto;
 }

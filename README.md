@@ -71,6 +71,7 @@ Als dit is gedaan wordt de volgende data weergegeven:
 - [ ] Bekijken of de boeken in de wishlist nog beschrikbaar zijn in de bilbiotheek
 - [ ] Spraak output functie zodra het kind het woord niet kent
 - [ ] De achtergrond kleur laten staan bij de categorie
+- [ ] Sidebar voor leeslijst
 
 ## Bronnen
 
