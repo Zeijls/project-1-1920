@@ -68,7 +68,7 @@ Als dit is gedaan wordt de volgende data weergegeven:
 - [ ] Zoeken op onderwerpen
 - [ ] 3D Caroussel om de onderwerpen weer te geven
 - [ ] Werkende wishlist
-- [ ] Bekijken of de boeken in de wishlist nog beschrikbaar zijn in de bilbiotheek
+- [ ] Bekijken of de boeken in de wishlist nog beschikbaar zijn in de bilbiotheek
 - [ ] Spraak output functie zodra het kind het woord niet kent
 - [ ] De achtergrond kleur laten staan bij de categorie
 - [ ] Sidebar voor leeslijst
