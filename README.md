@@ -3,7 +3,6 @@
 ## Project @cmda-minor-web 1819
 
 ![Overzichtspagina](src/img/overzicht.png)
-![Detailpagina](img/detail.png)
 
 ## Inhoudspagina
 
@@ -25,6 +24,12 @@ In deze projectweek kregen wij 3 cases waar we uit konden kiezen. Ik heb voor de
 ## Concept
 
 In mijn concept kun je een goed onderwerp voor je werkstuk vinden. Ik heb alles zo duidelijk mogelijk proberen te onderscheiden, zoals bijvoorbeeld met kleuren. Het kind kan filteren op verschillende niveaus. Zodra het kind op een boek klikt kan hij of zij lezen waar het over gaat en worden er verschillenden details weergegeven. Als het kind het een interessant boek lijkt voor haar werkstuk kan ze hem toevoegen aan haar leeslijst. Zodra ze in de bibliotheek is pakt ze haar leeslijst erbij en kan ze in een keer alle boeken verzamelen.
+
+Dit zijn de schetsen van hoe ik het eruit wil laten zien;
+
+![Overzichtspagina](src/img/overzicht1.png)
+![Detailpagina](src/img/detail1.png)
+![Leeslijst](src/img/leeslijst1.png)
 
 ## Gebruik
 
