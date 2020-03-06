@@ -92,7 +92,7 @@ article {
   background-color: white;
   min-width: 25%;
   max-width: 25%;
-  /* height: 15em; */
+  height: 20em;
   margin: 2%;
   border-radius: 10px;
   /* transition: opacity 0.1s 0s linear; */
@@ -109,16 +109,16 @@ article:hover {
   transform: scale(1.1);
 }
 
-article>img {
+article>.front>img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 0; */
 }
 
-article>button {
+.front>button {
   background-color: #08a3db;
   position: absolute;
   right: 0;
@@ -129,13 +129,15 @@ article>button {
   border-radius: 10px;
 }
 
-article>button>img {
+.front>button>img {
   width: 40px;
   height: 40px;
 }
 
 .img {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -152,22 +154,67 @@ article>button>img {
   /* background-color: red; */
   color: black;
   visibility: hidden;
-  opacity: 0;
-  height: 15em;
+  /* opacity: 0; */
+  /* max-height: 20em; */
 
   /* transition effect. not necessary */
-  transition: opacity 0.2s, visibility 0.2s;
+  /* transition: opacity 0.2s, visibility 0.2s; */
 }
 
 article:hover .title {
   visibility: visible;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
-article:hover .img {
+/* article:hover .img {
   opacity: 0.3 !important;
   transition: opacity 0.1s 0s linear;
+} */
+
+article {
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  position: relative;
 }
+
+article:hover {
+  transform: rotateY(-180deg);
+}
+
+/* .front {
+  width: 100%;
+  height: 100%;
+} */
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(-180deg);
+  display: block
+    /* height: 0; */
+}
+
+/* .back:hover {
+  backface-visibility: visible;
+} */
+
+.back:hover>h1 {
+  position: absolute;
+  top: 0;
+}
+
+/* .front {
+  margin-top: 50%;
+} */
+
+.front:hover {
+  height: 0;
+}
+
+
 
 article>a {
   width: 18%;

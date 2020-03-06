@@ -28,18 +28,21 @@ export const render = {
     results.forEach((item, i) => {
       const html = `
             <article>
+            <div class="front">
             <img src="${
               item.coverimages ? item.coverimages[1] : "Geen samenvatting"
             }">
             <button><img src="src/img/star.png"></button>
+            </div>
+            <div class="back">
+            <h2>${item.titles[0]}</h2>
+            <p>${item.summaries ? item.summaries[0] : "Geen samenvatting"}</p>
+            </div>
             </article>
           `;
       boekies.insertAdjacentHTML("beforeend", html);
     });
   },
-
-  // <h2>${item.titles[0]}</h2>
-  // <p>${item.summaries ? item.summaries[0] : "Geen samenvatting"}</p>
 
   overview: function(elementIdHeader, elementIdBooks, query, data) {
     console.log(data.length);
